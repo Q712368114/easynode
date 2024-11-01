@@ -44,17 +44,9 @@
         <el-collapse-item v-for="(hosts, groupName) in groupHostList" :key="groupName" :name="groupName">
           <template #title>
             <div class="group_title">
-              {{ groupName }}
+              {{ `${groupName}`+`${hosts.length ? `(${hosts.length})` : ''}` }}
             </div>
           </template>
-          <!-- <HostCard
-              v-for="(item, index) in hosts"
-              :key="index"
-              :host-info="item"
-              :hidden-ip="hiddenIp"
-              @update-host="handleUpdateHost"
-              @update-list="handleUpdateList"
-            /> -->
           <HostTable
             ref="hostTableRefs"
             :hosts="hosts"

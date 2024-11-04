@@ -110,12 +110,6 @@ curl -o- https://ghp.ci/https://raw.githubusercontent.com/chaos-zhu/easynode/mai
 
 webssh与监控服务都将以`该服务器作为中转`。中国大陆用户建议使用香港、新加坡、日本、韩国等地区的低延迟服务器来安装服务端面板
 
-## 捐赠
-
-如果您认为此项目帮到了您, 您可以请我喝杯阔乐~
-
-![wx](./doc_images/wx.jpg)
-
 ## License
 
 [MIT](LICENSE). Copyright (c).
